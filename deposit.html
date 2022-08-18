@@ -16,5 +16,20 @@
         <image class="logo" src="MRD.png"></image>
    </div>
      
+   <div id="loancal">
+    <h1>Loan Deposit</h1>
+    <div class="input">
+    <p>Amount Deposit:</p>
+      <input id="deposit" type="number" min="1" max="7000000" onchange="depositLoan()">
+    <p>Interest Rate: %</p>
+    <input id="interestRate" min="0" max="100" value="1" step=".1" onchange="depositLoan()">
+    <p>Storage Period: </p>
+     <input id="year" type="number" min="1" max="12" value="1" step="1" onchange="depositLoan()">
+  </div>
+    <h2 id="amount"></h2>
+    <h2 id="payment"></h2>
+    </div>
+
+    <script src="tema_frumoasa.js"></script>
 </body>
 </html>
